@@ -1,6 +1,7 @@
 {
   "name": "pkhp",
   "version": "0.0.1",
+  "homepage": "https://dmitryscaletta.github.io/pkhp",
   "dependencies": {
     "es6-symbol": "^3.1.1",
     "github-markdown-css": "^2.6.0",
@@ -25,6 +26,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
+    "gh-pages": "^0.12.0",
     "node-sass": "^4.5.2",
     "npm-run-all": "^4.0.2",
     "react-scripts": "0.9.5"
@@ -35,6 +37,8 @@
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
