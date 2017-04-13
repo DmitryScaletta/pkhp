@@ -1,7 +1,7 @@
 const page = `
 ## ОАО «Пинский комбинат хлебопродуктов»
 
-![](http://www.pkhp.by/pics/index000011.jpg)
+![](media/index.jpg)
 `;
 
 export default page;

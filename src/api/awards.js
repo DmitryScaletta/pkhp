@@ -1,130 +1,130 @@
 const diplomas = [
   {
     name: 'Диплом. За активное участие в смотре-конкурсе "Лучшая ветеранская организация года".',
-    image: 'http://www.pkhp.by/pics/arxiv000027.jpg',
+    image: 'media/diplomas/arxiv000027.jpg',
   },
   {
     name: 'Диплом. Победитель городского смотра-коркурса на лучшую организацию работы по охране труда в 2016 году.',
-    image: 'http://www.pkhp.by/pics/arxiv0018.jpg',
+    image: 'media/diplomas/arxiv0018.jpg',
   },
   {
     name: 'Диплом. За придание городу праздничного новогоднего облика.',
-    image: 'http://www.pkhp.by/pics/arxiv0017.jpg',
+    image: 'media/diplomas/arxiv0017.jpg',
   },
   {
     name: 'Благодарность. За активное содействие развитию физкультуры и спорта в городе.',
-    image: 'http://www.pkhp.by/pics/arxiv0016.jpg',
+    image: 'media/diplomas/arxiv0016.jpg',
   },
   {
     name: 'Диплом. За постоянное обновление ассортимента и сохранение высокого качества выпускаемой продукции.',
-    image: 'http://www.pkhp.by/pics/arxiv0015.jpg',
+    image: 'media/diplomas/arxiv0015.jpg',
   },
   {
     name: 'Диплом. За участие в 1 международном форуме-выставке деловых контактов.',
-    image: 'http://www.pkhp.by/pics/arxiv0014.jpg',
+    image: 'media/diplomas/arxiv0014.jpg',
   },
   {
     name: 'Диплом. За активное участие в 17 международной выставке-ярмарке',
-    image: 'http://www.pkhp.by/pics/arxiv0013.jpg',
+    image: 'media/diplomas/arxiv0013.jpg',
   },
   {
     name: 'Благодарность. Победа в конкурсе  "Инновации в комбикормовой промышлености" Союза комбикормщиков России.',
-    image: 'http://www.pkhp.by/pics/arxiv0012.jpg',
+    image: 'media/diplomas/arxiv0012.jpg',
   },
   {
     name: 'Благодарственное письмо. За вклад в строительство храма.',
-    image: 'http://www.pkhp.by/pics/arxiv0011.jpg',
+    image: 'media/diplomas/arxiv0011.jpg',
   },
   {
     name: 'Диплом. За первое место в районном смотре-конкурсе на лучший коллективный договор.',
-    image: 'http://www.pkhp.by/pics/arxiv0010.jpg',
+    image: 'media/diplomas/arxiv0010.jpg',
   },
   {
     name: 'Диплом. За второе место в районном смотре-конкурсе на лучший коллективный договор.',
-    image: 'http://www.pkhp.by/pics/arxiv000026.jpg',
+    image: 'media/diplomas/arxiv000026.jpg',
   },
   {
     name: 'Диплом. За значительный вклад в развитие студотрядовского движения.',
-    image: 'http://www.pkhp.by/pics/arxiv009.jpg',
+    image: 'media/diplomas/arxiv009.jpg',
   },
   {
     name: 'Диплом. За многолетнее плодотворное сотрудничество в развитии студотрядовского движения.',
-    image: 'http://www.pkhp.by/pics/arxiv008.jpg',
+    image: 'media/diplomas/arxiv008.jpg',
   },
   {
     name: 'Свидетельство о занесении на доску почета города Пинска 2013 г.',
-    image: 'http://www.pkhp.by/pics/arxiv007.jpg',
+    image: 'media/diplomas/arxiv007.jpg',
   },
   {
     name: 'Диплом. За 2-е место в областном смотре-конкурсе на лучшую организацию работы по охране труда в 2013 г.',
-    image: 'http://www.pkhp.by/pics/arxiv006.jpg',
+    image: 'media/diplomas/arxiv006.jpg',
   },
   {
     name: 'Диплом. Первое место среди предприятий и организаций в смотре-конкурсе "Фасад года" в 2013 году.',
-    image: 'http://www.pkhp.by/pics/arxiv005.jpg',
+    image: 'media/diplomas/arxiv005.jpg',
   },
   {
     name: 'Благодарственная грамота. За участие в делах милосердия и сострадания к детям-инвалидам.',
-    image: 'http://www.pkhp.by/pics/arxiv004.jpg',
+    image: 'media/diplomas/arxiv004.jpg',
   },
   {
     name: 'Свидетельство о занесении на доску почета города Пинска 2012 г.',
-    image: 'http://www.pkhp.by/pics/arxiv003.jpg',
+    image: 'media/diplomas/arxiv003.jpg',
   },
   {
     name: 'Диплом. Победитель городского смотра-конкурса на лучшую организацию работы по охране труда.',
-    image: 'http://www.pkhp.by/pics/arxiv002.jpg',
+    image: 'media/diplomas/arxiv002.jpg',
   },
   {
     name: 'Благодарственное письмо.',
-    image: 'http://www.pkhp.by/pics/arxiv001.jpg',
+    image: 'media/diplomas/arxiv001.jpg',
   },
   {
     name: 'Диплом. Брест. Содружество-2006. За профессиональное оформление стенда и демонстрацию представленной продукции.',
-    image: 'http://www.pkhp.by/pics/arxiv000006.jpg',
+    image: 'media/diplomas/arxiv000006.jpg',
   },
   {
     name: 'Брест. Содружество-2007. За активное участие в формировании потребительскогр рынка в Беларуси.',
-    image: 'http://www.pkhp.by/pics/arxiv000007.jpg',
+    image: 'media/diplomas/arxiv000007.jpg',
   },
   {
     name: 'Диплом. Брест. Содружество-2008. За профессиональное продвижение на региональный рынок продукции предприятия.',
-    image: 'http://www.pkhp.by/pics/arxiv000008.jpg',
+    image: 'media/diplomas/arxiv000008.jpg',
   },
   {
     name: 'Диплом. Брест. 2009г. Лучшие из лучших.',
-    image: 'http://www.pkhp.by/pics/arxiv000009.jpg',
+    image: 'media/diplomas/arxiv000009.jpg',
   },
   {
     name: 'Диплом. Минск. ПРОДЭКСПО 2009. За активное участие и широкий ассортиментпредставленной продукции.',
-    image: 'http://www.pkhp.by/pics/arxiv000010.jpg',
+    image: 'media/diplomas/arxiv000010.jpg',
   },
   {
     name: 'Диплом. Пинск. За активное участие в выставке-ярмарке "Содействие здоровому образу жизни. Пинск-2010"',
-    image: 'http://www.pkhp.by/pics/arxiv000011.jpg',
+    image: 'media/diplomas/arxiv000011.jpg',
   },
   {
     name: 'Диплом. Брест. Содружество-2012. За профессиональное продвижение на региональный рынок продукции предприятия.',
-    image: 'http://www.pkhp.by/pics/arxiv000012.jpg',
+    image: 'media/diplomas/arxiv000012.jpg',
   },
   {
     name: 'БРСМ. Туристический слет 2010. 1-е место в конкурсе бивуаков.',
-    image: 'http://www.pkhp.by/pics/arxiv000013.jpg',
+    image: 'media/diplomas/arxiv000013.jpg',
   },
   {
     name: 'Диплом. Белагропромбанк. В номинации: "Лидер комплексного банковского обслуживания". ',
-    image: 'http://www.pkhp.by/pics/arxiv000014.jpg',
+    image: 'media/diplomas/arxiv000014.jpg',
   },
 ];
 
 const certificates = [
-  'http://www.pkhp.by/pics/arxiv000015e.jpg',
-  'http://www.pkhp.by/pics/arxiv000016e.jpg',
-  'http://www.pkhp.by/pics/arxiv000023e.jpg',
-  'http://www.pkhp.by/pics/arxiv000022e.jpg',
-  'http://www.pkhp.by/pics/arxiv000025e.jpg',
-  'http://www.pkhp.by/pics/arxiv000024.jpg',
-  'http://www.pkhp.by/pics/arxiv000020.jpg',
+  'media/certificates/arxiv000015e.jpg',
+  'media/certificates/arxiv000016e.jpg',
+  'media/certificates/arxiv000023e.jpg',
+  'media/certificates/arxiv000022e.jpg',
+  'media/certificates/arxiv000025e.jpg',
+  'media/certificates/arxiv000024.jpg',
+  'media/certificates/arxiv000020.jpg',
 ];
 
 export default {
