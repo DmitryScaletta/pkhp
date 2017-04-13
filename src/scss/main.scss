@@ -1,0 +1,480 @@
+html {
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+	font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #2196F3;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.markdown-body {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+
+@import "grid";
+@import "gallery";
+
+
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+
+
+.container {}
+
+
+
+.content {
+	@include grid-container;
+	border-left: 1px solid #E0E0E0;
+	border-right: 1px solid #E0E0E0;
+}
+
+
+
+.catalog {
+	@include grid-row;
+
+	&__sidebar {
+		@include grid-column(12, lg 3);
+
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		ul ul {
+			padding-left: 15px;
+		}
+	}
+	
+	&__content {
+		@include grid-column(12, lg 9);
+		@media (min-width: $screen-lg) {
+			border-left: 1px solid #E0E0E0;
+		}
+	}
+
+	&__breadcrumbs {
+		padding-top: 22px;
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		li {
+			display: inline-block;
+			padding-right: 5px;
+			&:after {
+				content: ' / ';
+			}
+
+			&:last-child:after {
+				display: none;
+			}
+		}
+	}
+}
+
+
+
+.product-item {
+	@include grid-row;
+	padding: 15px 0;
+	border-bottom: 1px solid #9E9E9E;
+
+	&:last-child {
+		border-bottom: none;
+	}
+
+	&__image {
+		@include grid-column(12, md 3);
+	}
+	
+	&__content {
+		@include grid-column(12, md 9);
+	}
+
+	&__name {
+		font-weight: bold;
+	}
+
+	&__tnpa {
+		font-size: 14px;
+	}
+
+	&__desc {
+		padding: 15px 0;
+	}
+}
+
+
+
+
+.header {
+	background: #E3F2FD;
+	border-bottom: 1px solid #BBDEFB;
+
+	&__menu-wrapper {
+		background: #0D47A1;
+		border-bottom: 1px solid #1565C0;
+	}
+
+	&__menu {
+		@include grid-container;
+		margin: 0 auto;
+	}
+
+
+	&__content-wrapper {
+		@include grid-container;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	
+	&__content {
+		@include grid-row;
+	}
+
+	&__logo {
+		@include grid-column(12, md 4, lg 3);
+		text-align: center;
+
+		@media (min-width: $screen-md) {
+			text-align: left;
+		}
+	}
+
+	&__title {
+		@include grid-column(12, md 8, lg 9);
+		text-align: center;
+
+		@media (min-width: $screen-md) {
+			text-align: left;
+		}
+
+		@media (min-width: $screen-lg) {
+			padding-top: 25px;
+		}
+	}
+}
+
+
+
+.menu {
+	@include grid-row;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	&__item {
+		padding: 0;
+		position: relative;
+		min-height: 1px;
+		font-size: 16px;
+
+		@media (min-width: $screen-md) {
+			font-size: 12px;
+			width: 14.2857143%; // 100% / 7
+			float: left;
+		}
+
+		@media (min-width: $screen-lg) {
+			font-size: 16px;
+		}
+	}
+
+	&__link {
+		display: block;
+		padding: 10px 0;
+		text-align: center;
+		text-decoration: none;
+		color: #E0E0E0;
+		transition: color .4s, background .4s;
+
+		&:hover {
+			color: #0D47A1;
+			background: #fff;
+			text-decoration: none;
+		}
+		
+		&--active {
+			background: #1565C0;
+			color: #FAFAFA;
+		}
+	}
+	
+	&__submenu {
+		display: none;
+	}
+}
+
+
+
+.news {
+
+	&__item {
+		padding-bottom: 30px;
+		border-bottom: 1px solid #9E9E9E;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	&__title {
+		display: block;
+		padding: 15px 0;
+		font-weight: bold;
+	}
+
+	&__date {
+		display: block;
+		padding: 0 0 15px;
+		font-style: italic;
+	}
+
+	&__link {}
+}
+
+
+
+.news-item {
+	padding-top: 15px;
+
+	&__back {
+		display: block;
+	}
+
+	&__title {
+		display: block;
+		padding: 15px 0;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	&__date {
+		font-style: italic;
+	}
+
+	&__text {
+		padding: 15px 0;
+	}
+}
+
+
+
+.about {
+	padding-bottom: 15px;
+}
+
+
+
+.about-menu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	&__item {
+		display: inline-block;
+		padding-right: 10px;
+	}
+
+	&__link {
+		&--active {
+			color: #000;
+			font-weight: bold;
+		}
+	}
+}
+
+
+
+.feedback-form {
+	@include grid-row;
+
+	&__inner {
+		@include grid-column(12, lg 8, xl 6);
+	}
+
+	&__section {}
+
+	&__label {
+		display: block;
+		padding: 10px 0;
+		font-weight: bold;
+	}
+
+	&__input {
+		padding: 8px;
+		width: 100%;
+		outline: none;
+		border: 1px solid #9E9E9E;
+		font-family: inherit;
+		font-size: 16px;
+		border-radius: 2px;
+
+		&:focus {
+			border: 1px solid #0D47A1;
+			box-shadow: 0 0 3px #0D47A1;
+		}
+	}
+	&__textarea {
+		max-width: 100%;
+		min-width: 100%;
+		min-height: 150px;
+	}
+
+	&__buttons {
+		padding: 15px 0;
+	}
+
+	&__button {
+		padding: 5px;
+		margin-right: 10px;
+		&:last-child {
+			margin-left: 0;
+		}
+	}
+}
+
+
+
+.gallery {
+	@include grid-row;
+	padding-top: 15px;
+
+	&__inner {
+		@include grid-column(12, lg 10, xl 8);
+		@include grid-column-modifier(push, lg 1, xl 2);
+	}
+}
+
+
+
+.awards {
+	padding-top: 15px;
+
+	&__title {
+		text-align: center;
+		@media (min-width: $screen-md) {
+			text-align: left;
+		}
+	}
+
+	&__diplomas {}
+
+	&__item {
+		@include grid-row;
+	}
+
+	&__image {
+		@include grid-column(12, sm 3);
+		
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__name {
+		@include grid-column(12, sm 9);
+	}
+
+	&__certificates {}
+
+	&__list {
+		@include grid-row;
+	}
+
+	&__list-item {
+		@include grid-column(12, sm 6, md 4, lg 3);
+		margin-bottom: 20px;
+		text-align: center;
+
+		@media (min-width: $screen-sm) {
+			height: 200px;
+			img {
+				max-height: 200px;
+			}
+		}
+
+		@media (min-width: $screen-md) {
+			height: 250px;
+			img {
+				max-height: 250px;
+			}
+		}
+
+		@media (min-width: $screen-lg) {
+			height: 350px;
+			img {
+				max-height: 350px;
+			}
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+
+
+.footer {
+	background: #FAFAFA;
+	border-top: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
+
+	&__inner {
+		@include grid-container;
+		margin: 0 auto;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	&__address {
+		@include grid-column(12, md 4);
+		padding: 15px 0;
+		text-align: center;
+
+		@media (min-width: $screen-md) {
+			text-align: left;
+		}
+	}
+
+	&__contacts {
+		@include grid-column(12, md 4);
+		padding: 15px 0;
+		text-align: center;
+	}
+
+	&__links {
+		@include grid-column(12, md 4);
+		padding: 15px 0;
+		text-align: center;
+
+		@media (min-width: $screen-md) {
+			text-align: right;
+		}
+	}
+}

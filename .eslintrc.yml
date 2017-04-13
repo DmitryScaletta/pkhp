@@ -1,0 +1,12 @@
+extends: airbnb
+plugins:
+  - react
+  - jsx-a11y
+  - import
+env:
+  browser: true
+rules:
+  max-len: off
+  react/no-array-index-key: off
+  react/forbid-prop-types: warn
+  react/sort-comp: off

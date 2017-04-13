@@ -1,0 +1,26 @@
+const images = [
+  { original: 'media/gallery/01.jpg', thumbnail: 'media/gallery/01.jpg' },
+  { original: 'media/gallery/02.jpg', thumbnail: 'media/gallery/02.jpg' },
+  { original: 'media/gallery/03.jpg', thumbnail: 'media/gallery/03.jpg' },
+  { original: 'media/gallery/04.jpg', thumbnail: 'media/gallery/04.jpg' },
+  { original: 'media/gallery/05.jpg', thumbnail: 'media/gallery/05.jpg' },
+  { original: 'media/gallery/06.jpg', thumbnail: 'media/gallery/06.jpg' },
+  { original: 'media/gallery/07.jpg', thumbnail: 'media/gallery/07.jpg' },
+  { original: 'media/gallery/08.jpg', thumbnail: 'media/gallery/08.jpg' },
+  { original: 'media/gallery/09.jpg', thumbnail: 'media/gallery/09.jpg' },
+  { original: 'media/gallery/10.jpg', thumbnail: 'media/gallery/10.jpg' },
+  { original: 'media/gallery/19.jpg', thumbnail: 'media/gallery/19.jpg' },
+  { original: 'media/gallery/20.jpg', thumbnail: 'media/gallery/20.jpg' },
+  { original: 'media/gallery/21.jpg', thumbnail: 'media/gallery/21.jpg' },
+  { original: 'media/gallery/22.jpg', thumbnail: 'media/gallery/22.jpg' },
+  { original: 'media/gallery/23.jpg', thumbnail: 'media/gallery/23.jpg' },
+  { original: 'media/gallery/24.jpg', thumbnail: 'media/gallery/24.jpg' },
+  { original: 'media/gallery/25.jpg', thumbnail: 'media/gallery/25.jpg' },
+  { original: 'media/gallery/26.jpg', thumbnail: 'media/gallery/26.jpg' },
+  { original: 'media/gallery/27.jpg', thumbnail: 'media/gallery/27.jpg' },
+  { original: 'media/gallery/28.jpg', thumbnail: 'media/gallery/28.jpg' },
+  { original: 'media/gallery/29.jpg', thumbnail: 'media/gallery/29.jpg' },
+  { original: 'media/gallery/30.jpg', thumbnail: 'media/gallery/30.jpg' },
+];
+
+export default images;

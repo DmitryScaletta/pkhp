@@ -1,0 +1,41 @@
+{
+  "name": "pkhp",
+  "version": "0.0.1",
+  "dependencies": {
+    "es6-symbol": "^3.1.1",
+    "github-markdown-css": "^2.6.0",
+    "mdn-polyfills": "^2.1.1",
+    "normalize.css": "^6.0.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-image-gallery": "^0.7.15",
+    "react-markdown": "^2.4.6",
+    "react-redux": "^5.0.3",
+    "react-router": "^4.0.0",
+    "react-router-dom": "^4.0.0-beta.8",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0",
+    "remark": "^7.0.0",
+    "remark-react": "^4.0.0",
+    "translit-russian": "0.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "node-sass": "^4.5.2",
+    "npm-run-all": "^4.0.2",
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "build-css": "node-sass src/ -o src/",
+    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
