@@ -262,12 +262,11 @@ $screen-xl: 1200px;
 .news-item {
 	padding-top: 15px;
 
-	&__back {
-		display: block;
-	}
+	&__back {}
+
+	&__link {}
 
 	&__title {
-		display: block;
 		padding: 15px 0;
 		font-weight: bold;
 		font-size: 20px;

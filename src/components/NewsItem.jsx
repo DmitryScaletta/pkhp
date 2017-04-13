@@ -20,9 +20,11 @@ class NewsItem extends React.Component {
 
     return (
       <div className="news-item">
-        <Link className="news-item__back" to="/news">← Назад</Link>
-        <span className="news-item__title">{item.title}</span>
-        <span className="news-item__date">{item.date}</span>
+        <div className="news-item__back">
+          <Link className="news-item__link" to="/news">← Назад</Link>
+        </div>
+        <div className="news-item__title">{item.title}</div>
+        <div className="news-item__date">{item.date}</div>
         <div className="news-item__text">
           <ReactMarkdown className="markdown-body" source={item.text || ''} />
         </div>
