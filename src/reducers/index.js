@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import common from './common';
-import catalog from './catalog';
-import news from './news';
-import page from './page';
-import gallery from './gallery';
-import awards from './awards';
+import catalog from './Catalog';
+import news from './News';
+import page from './Page';
+import gallery from './Gallery';
+import awards from './Awards';
 
 const rootReducer = combineReducers({
   common,
